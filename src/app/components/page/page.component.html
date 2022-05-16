@@ -1,0 +1,11 @@
+<div class="page-container">
+    <textarea 
+        [id]="'page-content-'+pageID"
+        class="page-content"
+        name="content"
+        [(ngModel)]="content"
+        [maxlength]="maxChars"
+        (ngModelChange)="contentChanged($event)"
+        role="textbox">
+    </textarea>
+</div>

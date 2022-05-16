@@ -1,0 +1,9 @@
+<div id="content-wrapper">
+    <div class="notebook">
+        <app-page *ngFor="let item of [].constructor(pages); let i = index" 
+            [pageID]="i" 
+            [focused]="(i+1) == pages" 
+            (newPageEvent)="nextPage($event)" >
+        </app-page>
+    </div>
+</div>
